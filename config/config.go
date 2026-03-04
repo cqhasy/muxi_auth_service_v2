@@ -52,6 +52,7 @@ func (c *Config) initConfig() error {
 		if err := viper.ReadInConfig(); err != nil { // viper解析配置文件
 			return err
 		}
+		return nil
 	}
 
 	viper.SetConfigType("yaml")
